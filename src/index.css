@@ -3,3 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-family: "Courier New", Courier, monospace;
+}
+
+:root {
+  --accent-green: #41644a;
+  --accent-yellow: #f7db6a;
+}

@@ -1,0 +1,50 @@
+#reserve-table {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 5rem;
+  font-weight: bold;
+}
+
+#form-section {
+  width: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+label {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input,
+select,
+textarea {
+  padding: 0.75rem;
+  background-color: bisque;
+  border: 1px solid black;
+  width: 50%;
+  font-weight: bold;
+}
+
+textarea {
+  resize: none;
+}
+
+article {
+  text-align: center;
+}
+
+article h1 {
+  font-size: 2rem;
+  color: var(--accent-yellow);
+}
