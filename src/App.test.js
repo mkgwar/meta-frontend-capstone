@@ -1,8 +1,11 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { fireEvent, render, screen } from "@testing-library/react";
+import "@testing-library/jest-dom/extend-expect";
+import App from "./App";
 
-test('renders learn react link', () => {
+test("button changing form properly", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const btn = screen.getByTestId("button");
+  fireEvent.click(btn);
+  const formSection = screen.getByTestId("form-section");
+  expect(formSection).toHaveTextContent("First Name");
 });

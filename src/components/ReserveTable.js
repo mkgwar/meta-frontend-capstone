@@ -19,7 +19,7 @@ const ReserveTable = () => {
   return (
     <main id="reserve-table">
       <h1>Reserve a Table</h1>
-      <section id="form-section">
+      <section id="form-section" data-testid="form-section">
         {formNumber === 1 && (
           <form id="first">
             <label htmlFor="res-date">
